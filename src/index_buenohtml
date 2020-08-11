@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>click demo</title>
+  <style>
+    p {
+      color: red;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    p:hover {
+      background: yellow;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/cybersource.js"></script>
+
+    <!-- Include jQuery Popup Overlay -->
+    <script src="http://vast-eng.github.io/jquery-popup-overlay/jquery.popupoverlay.js"></script>
+</head>
+
+<body>
+
+  <button id="btnPayment">Click Me</button>
+
+  <script>
+    $(document).ready(function () {
+
+      $('#btnPayment').click(function () {
+        var slider = new Slider();
+      });
+
+      
+    });
+
+  </script>
+
+  <!-- Add content to the popup -->
+  <div id="my_popup">
+    ...popup content...
+
+    <!-- Add an optional button to close the popup -->
+    <button class="my_popup_close">Close</button>
+
+  </div>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>TestAppModal</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Remember to include jQuery :) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+  <!-- jQuery Modal -->
+  <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/jquery.modal.min.js"></script>
+  <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/jquery-1.7.min.js"></script>
+  <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/payment_form.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script type="text/javascript" charset="utf-8">
+$( "#target" ).click(function() {
+  alert( "Handler for .click() called." );
+});
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</head>
+
+<body>
+  <app-root></app-root>
+  <script>
+    $( "p" ).click(function() {
+      $( this ).slideUp();
+    });
+    </script>
+
+<p>First Paragraph</p>
+<p>Second Paragraph</p>
+<p>Yet one more Paragraph</p>
+
+  <div id="target">
+    Click here
+  </div>
+</body>
+
+</html>
