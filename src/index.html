@@ -22,14 +22,13 @@
   <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/js/bootstrap.min.js"></script>
   <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/js/cybersource.js"></script>
 
-
 </head>
 
 <body>
 
   <!-- Trigger the modal with a button -->
   <div class="container">
-    <button type="button" class="btn btn-info btn-lg" id="btnPayment">Pagar</button>
+    <button type="button" class="btn btn-success btn-lg" id="btnPayment">Pagar</button>
   </div>
 
   <!--paso de parametros-->
@@ -38,30 +37,6 @@
   <input id="txt_amount" value="33.00" type="hidden" />
   <input id="txt_token" value="23423kljdsdkfjk34" type="hidden" />
 
-  <!-- ventana modal  -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-          <iframe src="" id="ifrPayment" style="border:0" width="100%" height="100%"></iframe>
-        <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
-      </div>
-    </div>
-  </div>
-
-
-
 </body>
-
-
 
 </html>
