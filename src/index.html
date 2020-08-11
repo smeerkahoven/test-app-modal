@@ -7,41 +7,38 @@
   <style>
     .modal-dialog {
       width: 360px;
-      height: 600px !important;
+      height: 500px;
     }
 
     .modal-content {
       /* 80% of window height */
-      height: 80%;
+      height: auto;
       background-color: #BBD6EC;
     }
   </style>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/cybersource.js"></script>
+
+  <link rel="stylesheet" href="http://49ae9dda41c9.ngrok.io/cybersource/web/css/bootstrap.min.css">
+  <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/js/jquery.min.js"></script>
+  <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/js/bootstrap.min.js"></script>
+  <script src="http://49ae9dda41c9.ngrok.io/cybersource/web/js/cybersource.js"></script>
 
 
 </head>
 
 <body>
 
-  <script>
-    $(document).ready(function () {
-      $('#btnPayment').click(function () {
-        var slider = new Slider();
-        $("#exampleModalCenter").modal();
-      });
-    });
-
-  </script>
   <!-- Trigger the modal with a button -->
   <div class="container">
     <button type="button" class="btn btn-info btn-lg" id="btnPayment">Pagar</button>
   </div>
 
+  <!--paso de parametros-->
+  <input id="txt_detail" value="Boletos para Cualquier cosa" type="hidden" />
+  <input id="txt_currency" value="USD" type="hidden" />
+  <input id="txt_amount" value="33.00" type="hidden" />
+  <input id="txt_token" value="23423kljdsdkfjk34" type="hidden" />
 
-  <!-- Modal -->
+  <!-- ventana modal  -->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -52,7 +49,7 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-          <iframe src="" id="ifrPayment" style="border:0" width="100%" height="80%"></iframe>
+          <iframe src="" id="ifrPayment" style="border:0" width="100%" height="100%"></iframe>
         <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
